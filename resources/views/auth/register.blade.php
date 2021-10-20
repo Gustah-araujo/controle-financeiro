@@ -24,7 +24,7 @@
                 <hr>
                 <input id="password" type="password" name="senha" placeholder="Senha">
                 <hr>
-                <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirmação de senha">
+                <input id="password-confirm" type="password" name="senha_confirmation" placeholder="Confirmação de senha">
 
                 <div class="btn">
                     <button type="submit">REGISTRAR</button>

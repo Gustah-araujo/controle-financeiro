@@ -11,6 +11,11 @@
         <link href="{{ asset('css/admin-styles.css') }}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
+    
+    @php
+        $user = Auth::user();
+    @endphp
+
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
@@ -105,8 +110,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <div class="small">Logado como:</div>
+                        {{$user->nome}}
                     </div>
                 </nav>
             </div>
