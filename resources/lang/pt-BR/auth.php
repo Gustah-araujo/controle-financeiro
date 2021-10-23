@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'failed' => 'Não encontramos esse email no nosso banco de dados.',
-    'password' => 'Senha incorreta.',
-    'throttle' => 'Tentativas excessivas de login. Por favor tente novamente em :seconds segundos.',
+    'failed' => 'Essas credenciais não foram encontradas em nossos registros.',
+    'password' => 'A senha informada está incorreta.',
+    'throttle' => 'Muitas tentativas de login. Tente novamente em :seconds segundos.',
 
 ];

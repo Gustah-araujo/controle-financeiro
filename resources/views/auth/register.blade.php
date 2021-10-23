@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Controle Financeiro</title>
 
-    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
 <body>
-    
+
     <section>
 
         <div class="container">
@@ -17,10 +17,10 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name">
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="family-name">
                 <hr>
-                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="email" name="email" placeholder="Email" autocomplete="email">
                 <hr>
                 <input id="password" type="password" name="senha" placeholder="Senha">
                 <hr>
@@ -38,6 +38,8 @@
 
                 @endif
             </form>
+
+            <a href="{{ route('login') }}">Já possui uma conta?</a>
         </div>
 
     </section>

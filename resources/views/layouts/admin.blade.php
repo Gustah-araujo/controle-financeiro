@@ -11,7 +11,7 @@
         <link href="{{ asset('css/admin-styles.css') }}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    
+
     @php
         $user = Auth::user();
     @endphp
@@ -37,7 +37,10 @@
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <li><button class="dropdown-item" type="submit">Logout</button></li>
+                        </form>
                     </ul>
                 </li>
             </ul>
@@ -111,7 +114,7 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
-                        {{$user->nome}}
+                        {{$user->name}}
                     </div>
                 </nav>
             </div>
@@ -124,7 +127,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div class="text-muted">Copyright &copy; Gustavo Araújo - 2021</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;

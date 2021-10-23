@@ -2,6 +2,10 @@
     --azul-escuro: #334355;
 }
 
+.break{
+    width: 100%;
+}
+
 html,body{
     margin: 0;
     padding: 0;
@@ -25,9 +29,10 @@ section{
     justify-content: center;
     width: 50vw;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+    -webkit-box-shadow: 0px 0px 15px 5px #000000;
     box-shadow: 0px 0px 15px 5px #000000;
     border-radius: 10px;
+    padding: 10px 0px;
 }
 
 .container > img{
@@ -38,7 +43,7 @@ form{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 80%;
     margin: 15px 0px;
 }
@@ -48,7 +53,7 @@ form > input{
     border: none;
     font-size: 20px;
     padding: 3px 10px;
-    -webkit-box-shadow: 0px 0px 15px 2px #00000080; 
+    -webkit-box-shadow: 0px 0px 15px 2px #00000080;
     box-shadow: 0px 0px 15px 2px #00000080;
     border-radius: 5px;
 }
@@ -57,8 +62,12 @@ form > input::placeholder{
     color: rgb(0, 0, 0);
 }
 
+form > #email{
+    width: 100%;
+}
+
 form > hr{
-    width: 95%;
+    width: 100%;
     margin: 15px 0px;
 }
 
@@ -69,18 +78,10 @@ form > p{
     font-weight: 700;
 }
 
-form > #nome, form > #sobrenome{
-    width: 45%;
-}
-
-form > #email, form > #password, form > #password-confirm{
-    width: 100%;
-}
-
 form > .btn{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     margin-top: 15px;
 }
@@ -99,4 +100,15 @@ form > .btn > button{
 
 form > .btn > button:hover{
     background-color: rgb(11, 146, 11);
+}
+
+.container > a{
+    color: rgb(16, 14, 160);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.container > a:hover{
+    text-decoration: underline;
 }
